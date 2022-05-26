@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.input-wrap label {
+  font-weight: bold;
+  opacity: 0.6;
+  text-transform: capitalize;
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+.input-wrap label::after {
+  content: ':';
+  position: absolute;
+}
