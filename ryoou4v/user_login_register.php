@@ -2,25 +2,6 @@
 require_once('admin/config/connection.php');
 
 //register function
-// if(isset($_POST['register_rq'])){
-//     $username= mysqli_real_escape_string($conn, $_POST['username']);
-//     $email= mysqli_real_escape_string($conn, $_POST['email']);
-//     $password= sha1($_POST['password']);
-//     $confirm_password= sha1($_POST['confirm_password']);
-
-//     if($password !== $confirm_password){
-//         header('Location: index.php?action=register&m=not');
-//     }
-
-//     $sql= "insert into users(username, email, confirm_password) values('$username', '$email', '$confirm_password')";
-//     if(mysqli_query($conn, $sql)){
-//         header('location: dashboard.php');
-//     }else{
-//         header('Location: index.php?action=register&c=not'); 
-//     }
-// }
-
-//register function
 if(isset($_POST['register_rq'])){
     $username= mysqli_real_escape_string($conn, $_POST['username']);
     $email= mysqli_real_escape_string($conn, $_POST['email']);
@@ -35,13 +16,13 @@ if(isset($_POST['register_rq'])){
             $_SESSION['email'] = $email;
             header('location: dashboard.php');
         }else{
-            header('Location: index.php?action=register&c=not'); 
+            header('Location: home.php?action=register&c=not'); 
         }
     }else{
-        header('Location: index.php?action=register&m=not');
+        header('Location: home.php?action=register&m=not');
     }
 }else{
-    header('Location: index.php?action=register&to_short=true');
+    header('Location: home.php?action=register&to_short=true');
 }
 }
 
@@ -60,10 +41,10 @@ if(isset($_POST['login_rq'])){
                 header('location: dashboard.php');
             }
         }else{
-            header('location: index.php?action=login&info=wrong');
+            header('location: home.php?action=login&info=wrong');
         }
     }else{
-        header('location: index.php?action=login&info=wrong');
+        header('location: home.php?action=login&info=wrong');
     }
 
 }

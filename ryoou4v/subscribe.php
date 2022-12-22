@@ -5,7 +5,7 @@ $email= mysqli_real_escape_string($conn, $_POST['email']);
 $sql= "insert into subscribers(email) values('$email')";
 if(mysqli_query($conn, $sql)){
     $_SESSION['subscribed'] = true;
-    header('Location: index.php');
+    header('Location: home.php');
 }else{
-    header('Location: index.php');
+    header('Location: home.php');
 }

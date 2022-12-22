@@ -30,7 +30,7 @@ while($site= mysqli_fetch_assoc($result)){
     <link rel="stylesheet" type="text/css" href="assets/css/about-us.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/search.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/blog.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />  
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
 <?php
 if(isset($_SESSION['theme']) == 'light'){
@@ -40,13 +40,14 @@ if(isset($_SESSION['theme']) == 'light'){
       ';
 }
 ?>
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
   </head>
   <body>
     <section id="page-wrapper">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.php">
+          <a class="navbar-brand" href="home.php">
             <img src="assets/imaages/<?php echo $site['logo'] ?>" alt="Logo">
           </a>
           <button
@@ -58,12 +59,12 @@ if(isset($_SESSION['theme']) == 'light'){
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.php">Home</a>
+                <a class="nav-link" aria-current="page" href="home.php">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="characters.php">Characters</a>

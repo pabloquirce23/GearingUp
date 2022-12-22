@@ -1223,6 +1223,10 @@ aside.aside-box {
 .img-box img {
   height: 100px !important;
 }
+i.fa-solid.fa-bars {
+  color: white;
+  font-size: 35px;
+}
 a.navbar-brand img {
   width: 120px;
   height: auto;

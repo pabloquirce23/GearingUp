@@ -41,7 +41,7 @@ while($site= mysqli_fetch_assoc($result)){
               <div class="col-xl-4 col-lg-4 mb-50">
                 <div class="footer-widget">
                   <div class="footer-logo">
-                    <a href="index.php"
+                    <a href="home.php"
                       ><img
                         src="assets/imaages/<?php echo $site['logo'] ?>"
                         class="img-fluid"
@@ -102,7 +102,7 @@ while($site= mysqli_fetch_assoc($result)){
                 <div class="copyright-text">
                   <p>
                     Copyright &copy; 2018, All Right Reserved
-                    <a href="index.php"><?php echo $site['brand_name'] ?></a>
+                    <a href="home.php"><?php echo $site['brand_name'] ?></a>
                   </p>
                 </div>
               </div>
@@ -114,7 +114,7 @@ while($site= mysqli_fetch_assoc($result)){
 <?php } ?>
     <script src="assets/js/jquery.3.6.0.min.js"></script>
     <script src="assets/js/bootstrap5.0.1.min.js"></script>
+    <script src="assets/js/_app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="assets/js/app.js"></script>
   </body>
 </html>

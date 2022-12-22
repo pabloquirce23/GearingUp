@@ -1,5 +1,5 @@
 #hero-section-blog .hero-bg-img {
-  background-image: url('../imaages/slider_images/Guts-From-Berserk.jpg');
+  background-image: url('../imaages/slider_images/about_img.jpg');
   width: 100%;
   height: 40vh;
   background-position: center center;
@@ -7,7 +7,7 @@
   background-size: cover;
 }
 #hero-section-blog .hero-bg-img-about {
-  background-image: url('../imaages/slider_images/slider3.jpg');
+  background-image: url('../imaages/slider_images/about_img.jpg');
   width: 100%;
   height: 40vh;
   background-position: center center;
@@ -15,7 +15,7 @@
   background-size: cover;
 }
 #hero-section-character .hero-bg-img {
-  background-image: url('../imaages/slider_images/slider2.jpg');
+  background-image: url('../imaages/slider_images/about_img.jpg');
   width: 100%;
   height: 40vh;
   background-position: center center;

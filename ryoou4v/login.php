@@ -54,6 +54,7 @@ while($site= mysqli_fetch_assoc($result)){
     <link rel="stylesheet" type="text/css" href="assets/css/search.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/blog.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" /> 
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" /> 
 
 </head>
 <?php } ?>
@@ -63,7 +64,7 @@ while($site= mysqli_fetch_assoc($result)){
                     <div class="user signinBx">
                       <div class="imgBx">
                         <img
-                          src="assets/imaages/login_img.jpg"
+                          src="assets/imaages/guilty-gear-x-arte-promocional.jpg"
                           alt=""
                         />
                       </div>
@@ -71,7 +72,7 @@ while($site= mysqli_fetch_assoc($result)){
                         <form method="POST" action="">
                         <?php
                         if(isset($_GET['info']) && $_GET['info'] == 'wrong'){
-                            echo ' <p style="color:red; font-size: 13px;">User Credential Wrong!</p>';
+                            echo ' <p style="color:red; text-align: center; margin-bottom:20px; font-size: 13px;">User Credential Wrong!</p>';
                         }
                         ?>
                           <h2>Login</h2>

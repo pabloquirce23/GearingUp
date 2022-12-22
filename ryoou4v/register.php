@@ -58,6 +58,7 @@ while($site= mysqli_fetch_assoc($result)){
     <link rel="stylesheet" type="text/css" href="assets/css/search.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/blog.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" /> 
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" /> 
 
 </head>
 <?php } ?>
@@ -68,11 +69,11 @@ while($site= mysqli_fetch_assoc($result)){
                         <form method="POST" action="">
                             <?php
                             if(isset($_GET['m']) && $_GET['m'] == 'not'){
-                                echo ' <p style="color:red; font-size: 13px;">Password and Conform Password not match!</p>';
+                                echo ' <p style="color:red; text-align: center; margin-bottom:20px; font-size: 13px;">Password and Conform Password not match!</p>';
                             }elseif(isset($_GET['c']) && $_GET['c'] == 'not'){
-                                echo ' <p style="color:red; font-size: 13px;">Something went wrong! Please try again.</p>';
+                                echo ' <p style="color:red; text-align: center; margin-bottom:20px; font-size: 13px;">Something went wrong! Please try again.</p>';
                             }elseif(isset($_GET['to_short']) && $_GET['to_short'] == 'true'){
-                                echo ' <p style="color:red; font-size: 13px;">Password should be greater than 5</p>';
+                                echo ' <p style="color:red; text-align: center; margin-bottom:20px; font-size: 13px;">Password should be greater than 5</p>';
                             }
                             ?>
                             <h2>Create an account</h2>
@@ -89,12 +90,14 @@ while($site= mysqli_fetch_assoc($result)){
                       </div>
                       <div class="imgBx">
                         <img
-                          src="assets/imaages/register_img.png"
+                          src="assets/imaages/Guilty-Gear-20th-Anniversary-Edition-210119-005.jpg"
                           alt=""
                         />
                       </div>
                     </div>
                   </div>
                 </section>
-
+<?php
+  require_once('footer.php');
+?>
 
